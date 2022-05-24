@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alura Sprint 2 | Ahorcado</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon" />
+</head>
+    <body>
+        <header class="container">
+            <div class="row" id="dark-mode-box">
+                <p id="theme-icon">MODO 🌘</p>
+                <div class="col text-center">
+                    <label id="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <img class="logo" src="imagenes/Logo.png" />
+        </header>
+
+        <main>
+            <section class="botones">
+                <button onclick="iniciarJuego()">Iniciar Juego</button>
+                <button onclick="agregarPalabra()">Agregar Palabra</button>
+            </section>
+
+            <section class="agregar-palabra">
+                <textarea class="palabra-agregada" placeholder="Ingrese su palabra aqui"></textarea>
+                <legend>Maximo 8 caracteres</legend>
+                <button onclick="guardarIniciar()">Guardar y comenzar el juego</button>
+                <button onclick="volverInicio()">Cancelar</button>
+            </section>
+
+
+            <section class="juego-ahorcado">
+                <canvas class="dibujar"></canvas>
+                <p class="palabra-oculta"></p>
+                <input maxlength="1" placeholder="ingrese su letra aqui" class="guess-area" onkeydown="return /[a-z]/i.test(event.key)">
+                <legend class="incorrect"></legend>
+                <legend class="lose-game">Has Perdido!</legend>
+                <legend class="win-game">Has Ganado!</legend>
+                <button class="rendirse" onclick="reiniciar()">Rendirse</button>
+            </section>
+
+            <button class="reiniciar" onclick="reiniciar()">¿Jugamos Otra?</button>
+        </main>
+
+        <span>
+            <br />
+            Desarrollado por Kukre - Maxi Rios &copy; 2022 |
+            <a target="_blank" href="https://github.com/Kukre2005">GitHub</a> |
+            <a target="_blank" href="https://www.linkedin.com/in/omar-maximiliano-rios-6524921b0/">LinkedIn</a> |
+        </span>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/modo-oscuro.js"></script>
+
+    </body>
+</html>
