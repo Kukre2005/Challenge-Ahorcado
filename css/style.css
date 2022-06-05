@@ -308,7 +308,7 @@ input:checked + .slider:before {
 .reiniciar {
     display: none;
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 55%;
     margin: 0 20px 0 20px;
     font-size: 20px;
