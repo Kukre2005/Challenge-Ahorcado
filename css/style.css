@@ -39,11 +39,11 @@ header img {
     height: 20vh;
 }
 
-.logo {
-    margin: 50px auto;
+#logo {
+    margin: 20px auto;
     display: inline;
-    width: 150%;
-    height: 150%;
+    width: 120%;
+    height: 120%;
 }
 
 .botones {
@@ -83,7 +83,7 @@ header img {
 
 #dark-mode-box {
     position: absolute;
-    left: 1300%;
+    left: 1088%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
